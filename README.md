@@ -1,4 +1,4 @@
-Helium Docs via mkdocs.org.
+Helium Docs via mkdocs.org. These live online at https://www.helium.co/docs/
 
 To add a new page:
 
