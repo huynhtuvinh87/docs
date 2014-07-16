@@ -1,137 +1,51 @@
-# MkLorum
+# Et et bis infectum dea ponar
 
-Project documentation with&nbsp;Markdown.
+## De modo sanguine sequens
 
----
+Lorem markdownum nocte prohibente fistula quoque. Unde mox, me et ut, cognataque
+quem inprobe. Ceperat et lumina **deprenderat miserarum** tamen, signatum,
+interdum quantum consitor et canum et Sunt, avem?
 
-## Overview
+> Iussa regia prece fusis refugis suaque; regna subdita Tirynthius exercita.
+> Quidem hominis: obstaret illa ornique. [Ipse
+> silvis](http://en.wikipedia.org/wiki/Sterling_Archer) cadunt **Achilles aera**
+> corpus fide vincant rudis *nam similes*: duos ferroque totiens clauserat ipse.
+> Dumque pertimuit illic fraudem Hippomenes potente est, sed mea. Ignes nullo
+> terga habenis.
 
-MkDocs is a **fast**, **simple** and **downright gorgeous** static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a single YAML configuration file.
+## Muneris talia
 
----
+Sum mediis ego lecti, et cutem aliudque Pleiadasque bimatrem obstruat Aurora [at
+Peleu breve](http://www.reddit.com/r/haskell) laevum referens. Subitam tamen
+[timuitque](http://kimjongunlookingatthings.tumblr.com/) nec hunc felix, in
+ponit: damus promissis o caelo Thebas trepidante.
 
-**MkDocs is currently still in development.**
+Iuga ictus quae, et agnus iratus. Aut [vetus inmiti in](http://imgur.com/) nunc
+proque animi, me mens iuventa; melioris vomit sua.
 
-We're progressing quickly, but the documentation still needs filling in, and theres a few rough edges.  The 1.0 release is planned to arrive in the next few weeks.
+## Scitis alta suras
 
----
+Hiems auro nisi [neque](http://seenly.com/). Non prius **ingenti pendere
+conubia**, saxumque, et vetus Aeson tempore suis fixa deficis adgnoscitque
+ignes, reposco, dumque. Adiectoque pervenit in *fecerat* nocte, in lateantque
+possent fluctibus. Fatum parva ceciderat corpus a ventis est posita, mea rogus
+plaustri flagrant, in. Nostra at tota convivia magno; surgere victima est dat
+veluti nigra.
 
-#### Host anywhere.
+> Finire defenditur verba nec lumina rex tempore nostro, non terram micantes ne
+> **vocavit** aetheriae **imagine cedere** primum. Est Calydona inposito valido.
 
-Builds completely static HTML sites that you can host on GitHub pages, Amazon S3, or anywhere else you choose.
+Urbes verba iustissime, humus [iam Daedalon flebile](http://zeus.ugent.be/)
+submissa, parum cannis felix [Neretum](http://www.reddit.com/r/haskell), qua est
+pro. Umbraque manu superat, satiata, est [videt verum
+flumina](http://html9responsiveboilerstrapjs.com/)? Nisi possumus inquit
+fluminis generis est! Massae retemptat tamen?
 
-#### Great themes available.
-
-There's a stack of good looking themes included by default. Choose from bootstrap, readthedocs, ghostwriter, or any of the 12 bootswatch themes.
-
-#### Preview your site as you work.
-
-The built-in devserver allows you to preview your documentation as your writing it. It will even auto-reload whenever you save any changes, so all you need to do to see your latest edits is refresh your browser.
-
-#### Easy to customize.
-
-Get your project documentation looking just the way you want it by customizing the theme.
-
-#### Cross-reference your documentation.
-
-Create richly cross-referenced documents, using the MkDocs interlinking syntax.
-
----
-
-## Installation
-
-Install using pip:
-
-    pip install mkdocs
-
-You should now have the `mkdocs` command installed on your system.  Run `mkdocs help` to check that everything worked okay.
-
-    $ mkdocs help
-    mkdocs [build|serve] {options}
-
----
-
-## Getting started
-
-In order to run, mkdocs requires a single configuration file named `mkdocs.yml` to exist in the current directory.
-
-There is one required settings in the configuration file, `site_name`.  Let's create a simple configuration file for our new project `MkLorum`:
-
-    $ echo 'site_name: MkLorum' > mkdocs.yml
-
-Your documentation source files should all exist in a single directory. By default this directory should be named `docs`.
-
-    $ mkdir docs
-
-Now we need some documentation. The markdown files in our `docs` directory should correspond with the entries in the configuration file, so we need to create `index.md` and `about.md` files, and populate them with some markdown.
-
-As a shortcut, we can use Jasper Van der Jeugt's ['lorum-markdownum' website](https://github.com/jaspervdj/lorem-markdownum) site to generate pages of random Markdown text automatically:
-
-    $ curl 'jaspervdj.be/lorem-markdownum/markdown.txt' > docs/index.md
-
-When you're done the directory layout should look like this:
-
-    mkdocs.yml
-    docs/
-        index.md
-
-Okay, we're ready to build  our documentation now. MkDocs comes with a built-in webserver that lets you preview your documentation as you work on it. We start the webserver by making sure we're in the same directory as the `mkdocs.yml` config file, and then running the `mkdocs serve` command:
-
-    $ mkdocs serve
-	Running at: http://127.0.0.1:8000/
-
-Open up [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser, and you'll see the index page being displayed:
-
-![Screenshot](img/screenshot.png)
-
-The webserver also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory or theme directory changes.
-
-Go ahead and edit the `doc/index.md` document, and change the initial heading to `MkLorum`, then reload the site in your browser, and you should see the change take effect immediately.
-
-Let's also add a second page to our documentation:
-
-    $ curl 'jaspervdj.be/lorem-markdownum/markdown.txt' > docs/about.md
-
-We'd like our documentation site to include some navigation headers, so we'll edit the configuration file and add some information about the order and title to use for out headers:
-
-    site_name: MkLorum
-    pages:
-    - [index.md, Home]
-    - [about.md, About]
-
-Refresh the browser and you'll now see a navigation bar with `Home` and `About` headers.
-
-While we're here can also change the configuration file to alter how the documentation is displayed.  Let's go ahead and change the theme.  Edit the `mkdocs.yaml` file to the following:
-
-    site_name: MkLorum
-    pages:
-    - [index.md, Home]
-    - [about.md, About]
-    theme: readthedocs
-
-Refresh the browser again, and you'll now see the ReadTheDocs theme being used.
-
-![Screenshot](img/readthedocs.png)
-
----
-
-## Building & deploying
-
-That's looking good.  We're ready to deploy the first pass of our `MkLorum` documentation now.  Let's build the documentation.
-
-    $ mkdocs build
-
-This will create a new directory, named `site`.  Let's take a look inside the directory:
-
-    $ ls site
-    about css fonts img index.html js
-
-Notice that our source documentation has been output as two HTML files named `index.html` and `about/index.html`.  We also have various other media that's been copied into the `site` directory as part of the documentation theme.
-
-If you're using source code control such as `git` you probably don't want to check your documentation builds into the repository.  Add a line containing `site/` to your `.gitignore` file.
-
-    echo 'site/' >> .gitignore
-
-If you're using another source code control you'll want to check it's documentation on how to ignore specific directories.
-
-The documentation site that we've just built only uses static files so you'll be able to host it from pretty much anywhere. [GitHub project pages](https://help.github.com/articles/creating-project-pages-manually) and [Amazon S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) are good hosting options. Upload the contents of the entire `site` directory to wherever you're hosting your website from and you're done.
+[Ipse silvis]: http://en.wikipedia.org/wiki/Sterling_Archer
+[Neretum]: http://www.reddit.com/r/haskell
+[at Peleu breve]: http://www.reddit.com/r/haskell
+[iam Daedalon flebile]: http://zeus.ugent.be/
+[neque]: http://seenly.com/
+[timuitque]: http://kimjongunlookingatthings.tumblr.com/
+[vetus inmiti in]: http://imgur.com/
+[videt verum flumina]: http://html9responsiveboilerstrapjs.com/
