@@ -1,0 +1,234 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+
+body {
+    padding-top: 70px;
+}
+
+ul.nav li.main {
+    font-weight: 400;
+}
+
+div.col-md-3 {
+    padding-left: 0;
+}
+
+div.source-links {
+    float: right;
+}
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+    position: static;
+}
+
+.bs-sidebar.well {
+    padding: 0;
+}
+
+/* First level of nav */
+.bs-sidenav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+    display: block;
+    padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    border-right: 1px solid;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+    font-weight: 400;
+    background-color: transparent;
+    border-right: 4px solid;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+    padding-top:    3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-sidebar.affix,
+    .bs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 120px;
+    }
+    .bs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-sidebar.affix-bottom .bs-sidenav,
+    .bs-sidebar.affix .bs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-sidebar.affix-bottom,
+    .bs-sidebar.affix {
+        width: 263px;
+    }
+}
+
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 43px;
+    font-weight: 200;
+    margin-bottom: 50px;
+    padding-top: 106px;
+        margin-top:-50px;
+}
+
+.navbar-default {
+    background: #3fc1a1; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2ZjMWExIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVmYzRlMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(-45deg, #3fc1a1 0%, #5fc4e2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3fc1a1), color-stop(100%,#5fc4e2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, #3fc1a1 0%,#5fc4e2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, #3fc1a1 0%,#5fc4e2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, #3fc1a1 0%,#5fc4e2 100%); /* IE10+ */
+background: linear-gradient(135deg, #3fc1a1 0%,#5fc4e2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fc1a1', endColorstr='#5fc4e2',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: #329e95;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-nav>.disabled>a, .navbar-default .navbar-nav>.disabled>a:hover, .navbar-default .navbar-nav>.disabled>a:focus {
+    color: rgba(0,0,0,0.25);
+}
+
+
+
+body {
+    font-weight: 200;
+    font-size: 20px;
+    color: #454545;
+    line-height: 30px;
+    
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 72px;
+    margin-top: -58px;
+    color: #1EA59A;
+}
+
+blockquote p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.bs-sidebar .nav > li > a {
+    font-size: 17px;
+    line-height: 1.2;
+    
+}
+
+.bs-sidebar .nav > li > a {
+    padding: 10px 20px;
+}
+
+a {
+    color: #1EA59A;
+}
+
+b, strong {
+    font-weight: 400;
+}
+
+.prettyprint {
+    padding: 28px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+    background-color: #f3f3f3;
+}
+
+.bs-sidebar.well {
+    border-radius: 10px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    padding: 30px 0px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 28px;
+}
+
+p {
+    margin-bottom: 34.5px;
+}
+img.logo {
+    padding: 0px !important;
+}
+
+.nav {
+padding-top: 21px;
+}
+
+.navbar {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+    
+.navbar-nav>li>a {
+    border-radius: 30px;
+    margin-right: 10px;
+    padding: 5px 10px;
+        
+
+}
+ul, ol {
+    margin-bottom: 50px
+}
