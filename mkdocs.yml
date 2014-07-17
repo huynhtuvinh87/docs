@@ -1,6 +1,9 @@
 site_name: Helium Docs
 pages:
-- [index.md, Home]
-- [about.md, About]
-- [edwe.md, edwe]
+- ['index.md', 'Home']
+- ['libraries/arduino.md', 'Libraries', 'Arduino']
+- ['shields-and-modules/springer-alpha-shield.md', 'Shields and Modules', 'Springer Alpha Shield']
+- ['shields-and-modules/atom-beta-shield.md', 'Shields and Modules', 'Atom Beta Shield']
+- ['fusion/helium-fusion.md', 'Fusion', 'Helium Fusion']
+
 theme_dir: mkdocs/themes/helium
