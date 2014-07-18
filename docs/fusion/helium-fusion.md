@@ -13,11 +13,11 @@ If you already have a Fusion account, you'll be able to [login](https://fusion.h
 After logging in you'll be taken to your dashboard. You're first presented with your list of Flows. If this is your first time using Fusion, you won't have any Flows, do your list of Flows will be empty. It will look like this:
 
 
-![No Flow](/img/blank-dashboard.png)
+![No Flow](https://www.helium.co/docs/img/blank-dashboard.png)
 
 To create a new flow, you would start with that input box in the upper right corner. But first we need to register your device. If you click on the [Devices](https://fusion.helium.io/devices) link in the top left, you'll be taken to this screen:
 
-![No Device](/img/fusion-no-devices.png)
+![No Device](https://www.helium.co/docs/img/fusion-no-devices.png)
 
 If you're part of the Beta, you'll be using an [Atom](/shields-and-modules/atom-beta-shield/) to connect to Helium. Each Helium module is identified by a globally unique serial number, 12-16 hexadecimal characters in length. To add your device to the network, enter this serial number (which should be labelled clearly on your Atom), along with a New Device Name of your choosing, and click "Register Device" in the upper right. 
 

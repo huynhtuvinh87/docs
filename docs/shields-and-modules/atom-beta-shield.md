@@ -17,5 +17,5 @@ If you've just taken delivery on your Atom, the easiest way to get it connected 
 
 ## Atom Schematic and Pins
 
-You can find a full schematic for the Atom [here](/assets/Springer_Rev2_0_SCH.pdf) (PDF). This should aid you when integrating with the various available pins on the Atom.  
+You can find a full schematic for the Atom [here](https://www.helium.co/docs/assets/Springer_Rev2_0_SCH.pdf) (PDF). This should aid you when integrating with the various available pins on the Atom.  
 
