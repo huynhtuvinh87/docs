@@ -3,12 +3,12 @@
 
 The first generation of the Helium Development Shield is known as the **Springer**, pictured below. Springers were used for the Helium Alpha program and the orginal platform testing. 
 
-![Springer Alpha Shield](/img/springer1.jpg)
+![Springer Alpha Shield](https://www.helium.co/docs/img/springer1.jpg)
 
 
 The Springers are made to pin into the [Arduino UNO](http://arduino.cc/en/Main/arduinoBoardUno), pictured below.
 
-![Springer Alpha Shield with UNO](/img/springer-with-uno.jpg)
+![Springer Alpha Shield with UNO](https://www.helium.co/docs/img/springer-with-uno.jpg)
 
 
 ## Springer Arduino UNO Interfaces
