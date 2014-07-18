@@ -1,9 +1,21 @@
 # Springer Alpha Shield
 
 
-The following is a description of the interfaces and pins on the Alpha Arduino UNO Shields, known as the **Springer**. 
+The first generation of the Helium Development Shield is known as the **Springer**, pictured below. Springers were used for the Helium Alpha program and the orginal platform testing. 
 
-### Helium Arduino UNO Interfaces
+![Springer Alpha Shield](/img/springer1.jpg)
+
+
+The Springers are made to pin into the [Arduino UNO](http://arduino.cc/en/Main/arduinoBoardUno), pictured below.
+
+![Springer Alpha Shield with UNO](/img/springer-with-uno.jpg)
+
+
+## Springer Arduino UNO Interfaces
+
+The following is a description of the interfaces and pins on the Springer
+
+
 
 |Interface | Description | 
 |----| ------- | 
