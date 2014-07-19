@@ -59,7 +59,7 @@ used to exchange data with the Helium network.  This object is
 referenced by the modem variable, which is a pointer the newly created
 modem object.
 
-Here is how you wouldl create an instance of the Helium modem in the sketch’s `setup` function.
+Here is how you would create an instance of the Helium modem in the sketch’s `setup` function.
 
 
 ```cpp
