@@ -281,3 +281,7 @@ code {
 img {
     border: #eee solid 1px;
 }
+
+img.logo {
+    border: none;
+}
