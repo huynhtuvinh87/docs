@@ -62,8 +62,8 @@ Here is how you would create an instance of the Helium modem in the sketch’s `
 
 
 ```cpp
+#include <SoftwareSerial.h>
 #include <helium.h>
-#include <SPI.h>
 
 HeliumModem *modem;
 
@@ -460,7 +460,7 @@ void loop()
 
 ```
 
-Here's your simple up-and-running example for Helium. This short program will send "Sent from my Helium Device" every five seconds. A natural extention of this in [Helium Red](https://red.helium.io) would be to pass this data to a Twitter node and send it as a tweet. You could also transform it into an SMS message and tell all your friends about Helium. 
+Here's your simple up-and-running example for Helium. This short program will send "Sent from my Helium Device" every five seconds. A natural extention of this in [Fusion](https://fusion.helium.io) would be to pass this data to a Twitter node and send it as a tweet. You could also transform it into an SMS message and tell all your friends about Helium. 
 
 
 ### Button Press
