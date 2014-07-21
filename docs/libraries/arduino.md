@@ -11,15 +11,14 @@ application.
 
 ##  Download and Installation
 
-You can either use the git command shown to clone the library source
-code, or you can download the source code from
-[GitHub](http://github.com/helium/helium-arduino).  The code can be
-downloaded as a .zip file. The Arduino GUI can load libraries directly
+The easiest way to get started is to download the latest 
+version of the library from 
+our [Github repo](https://github.com/helium/helium-arduino/archive/master.zip). 
+The Arduino GUI can load libraries directly
 from the zipfile, but the Helium zipfile will not work because it
 contains dashes. So unzip the downloaded file to a convenient place on
 your disk, and rename the *helium-arduino-master directory* to simply
 _helium_.
-> git clone https://github.com/helium/helium-arduino
 
 The library must be loaded into the Arduino development tool before
 you can use it. Download the Arduino GUI from
@@ -439,10 +438,9 @@ We've put together a few pieces of sample code to get you started. If you've got
 
 ### Simple Looping Message
 
-```cpp 
-
+```cpp
+#include <SoftwareSerial.h>
 #include <helium.h>
-#include <SPI.h>
 
 //declare the helium modem
 HeliumModem *modem;
@@ -455,7 +453,7 @@ void loop()
 {
       // send a message on a loop every five seconds
       DataPack dp(1);
-      dp.appendString((char*)"Sent from my Helium Device");
+      dp.appendString("Sent from my Helium Device");
       modem->sendPack(&dp);
       delay(5000);
 }
@@ -470,8 +468,8 @@ Here's your simple up-and-running example for Helium. This short program will se
 This program is borrowed [from Arduino Tutorials](http://arduino.cc/en/tutorial/button). 
 
 ```cpp
-# include <helium.h>
-# include <SPI.h>
+#include <SoftwareSerial.h>
+#include <helium.h>
 
 //declare the helium modem
 HeliumModem *modem;
@@ -495,7 +493,7 @@ void loop(){
   if (buttonState == HIGH) {
       // check if the pushbutton is pressed.
       DataPack dp(1);
-      dp.appendString((char*)"Button Pressed!");
+      dp.appendString("Button Pressed!");
       modem->sendPack(&dp);
     }
 }
