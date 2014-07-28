@@ -31,7 +31,7 @@ The Atom has three LEDs:
 
 During power on, the Blue LED will flash very rapidly, showing it is scanning channels. If a Bridge is within range, it will enter the association process. Upon completion of that process, the Bridge will send the final configuration data and the Atom's Red LED will stay lit for 500ms. After this is complete, the red LED will continue blinking once per second to signify that it's online and listening to the Bridge. 
 
-If there is an application requiring the transmission of data from the Atom to the network, the Blue LED will light up, signifying the transmitted frames leaving the Atom. This will be a 500ms blink when data is transmitted. If sleep is used - done so by toggling the `D5` pin - the Atom will enter sleep mode and the module will not receive or transmit any data. Once awake, the Atom will again be listening for the Bridge data and start sending application data as required. If the Bridge is moved or out of range, the Atom will enter re-scaning mode to search for the nearest Bridge again.
+If there is an application that requires transmitting data from the Atom to the network, the Blue LED will light up, signifying the transmitted frames leaving the Atom. This will be a 500ms blink when data is transmitted. If sleep is used - done so by toggling the `D5` pin - the Atom will enter sleep mode and the module will not receive or transmit any data. Once awake, the Atom will again be listening for the Bridge data and start sending application data as required. If the Bridge is moved or out of range, the Atom will enter re-scaning mode to search for the nearest Bridge again.
 
 ## Atom Pins
 
