@@ -13,7 +13,7 @@ The Atoms are made to pin into the [Arduino UNO](http://arduino.cc/en/Main/ardui
 
 ## Connecting Your Atom
 
-If you've just taken delivery on your Atom, the easiest way to get it connected to the network is with Fusion. [Start here](/fusion/helium-fusion/).
+If you've just taken delivery on your Atom, the easiest way to get it connected to the network is with Fusion. [Start here](/docs/fusion/helium-fusion/).
 
 ## Atom Schematic 
 
