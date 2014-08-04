@@ -10,7 +10,7 @@ If you already have a Fusion account, you'll be able to [login](https://fusion.h
 
 ## Registering and Managing Devices
 
-After logging in you'll be taken to your dashboard. You're first presented with your list of Flows. If this is your first time using Fusion, you won't have any Flows, do your list of Flows will be empty. It will look like this:
+After logging in you'll be taken to your dashboard. You're first presented with your list of Flows. If this is your first time using Fusion, you won't have any Flows, so your list of Flows will be empty. It will look like this:
 
 
 ![No Flow](https://www.helium.co/docs/img/blank-dashboard.png)
