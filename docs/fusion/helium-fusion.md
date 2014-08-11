@@ -34,7 +34,7 @@ Make sure you use your real information when adding your device. **After you've 
 
 We can now create a flow that takes data from your Atom and sends it to the network. Flows are pieces of logic that enable you to transform, bend, and route data. We're going to create a simple flow, but as you'll quickly realize, they are a powerful concept that creates unbounded potential when working with device and sensor data. 
 
-Your Atom is programmable via our Arduino Library. Once you've [downloaded and installed the package](/libraries/arduino/#download-and-installation), you'll need to write a Sketch to generate data. We've included some [example programs](/libraries/arduino/#example-programs) that you can use to get started. The Simple Looping Message program is a quick and easy way to get up and running. Take a few minutes to get that loaded up onto your Atom. 
+Your Atom is programmable via our Arduino Library. Once you've [downloaded and installed the package](/docs/libraries/arduino/#download-and-installation), you'll need to write a Sketch to generate data. We've included some [example programs](/docs/libraries/arduino/#example-programs) that you can use to get started. The Simple Looping Message program is a quick and easy way to get up and running. Take a few minutes to get that loaded up onto your Atom. 
 
 Head back to [your Dashboard](https://fusion.helium.io/flows) so we can create your first flow. Once there, in the upper right hand corner, enter a name for your new flow and select "Create Flow." Here's what you'll see:
 
