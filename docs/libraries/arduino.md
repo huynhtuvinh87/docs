@@ -420,21 +420,13 @@ modem->sleepModem(1);
 ```
 
 
-## Send Debug Messages To Helium
+## Debugging Messages from Helium Devices
 
-Sometimes it may be necessary to send a debug message to the Helium network. You will be able to see these messages from the Helium Console. Here's an example:
-
-```cpp
-char msg[20];
-sprintf(msg, "Hey Mom It Works!");
-modem->sendDebugMsg(msg);
-
-```
-
+Debugging messages from Helium devices is currently done in [Fusion](https://fusion.helium.io). You can see an example of how it is done [here](https://www.helium.co/docs/fusion/helium-fusion/#sending-data-and-creating-flows). 
 
 ## Example Programs
 
-We've put together a few pieces of sample code to get you started. If you've got others you want to contribute we would be happy to feature them here. Please [send us a pull request](https://github.com/nervcorp/helium-c-api-docs/pulls) and we'll take a look. 
+We've put together a few pieces of sample code to get you started. If you've got others you want to contribute we would be happy to feature them here. Please [send us a pull request](https://github.com/helium/helium-arduino/pulls) and we'll take a look. 
 
 ### Simple Looping Message
 
