@@ -7,6 +7,10 @@ We're working quickly to build out community infrastructure and resources. Here'
 
 The [Helium Forum](http://forum.helium.co/) is the home for technical discussion about all things Helium. 
 
+## Helium HipChat
+
+The [Helium Community Room](https://www.hipchat.com/g0w30ttrl) is the best place for real-time help and interaction with the Helium Team and other users. We try to be as responsive as possible in this channel.
+
 ## Helium on GitHub
 
 Our public and open source code and resources can be found on the [Helium Github organization](https://github.com/helium/). 
