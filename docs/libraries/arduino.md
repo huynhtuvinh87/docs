@@ -23,7 +23,7 @@ _helium_.
 The library must be loaded into the Arduino development tool before
 you can use it. Download the Arduino GUI from
 [Arduino.cc](www.arduino.cc), and install it. Start the Arduino GUI,
-and import the Helium library frome the main menu item labeled
+and import the Helium library from the main menu item labeled
 _Sketch/Import Library/Add Library_, and select the _helium_ directory
 that you renamed earlier. If there are no errors, then you should be
 able to load one of the Helium example sketches. Select
