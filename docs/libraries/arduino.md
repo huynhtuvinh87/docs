@@ -22,7 +22,7 @@ _helium_.
 
 The library must be loaded into the Arduino development tool before
 you can use it. Download the Arduino GUI from
-[Arduino.cc](www.arduino.cc), and install it. Start the Arduino GUI,
+[Arduino.cc](http://www.arduino.cc), and install it. Start the Arduino GUI,
 and import the Helium library from the main menu item labeled
 _Sketch/Import Library/Add Library_, and select the _helium_ directory
 that you renamed earlier. If there are no errors, then you should be
@@ -33,7 +33,7 @@ and load one of them.
 Try building the sketch by pressing control-R. If all is well you will
 see a message in the output panel of the Arduino IDE giving the image
 size of the compiled application.  If there are problems, you can get
-help resolving them on the [Arduino webpage](www.arduino.cc).
+help resolving them on the [Arduino webpage](http://www.arduino.cc).
 
 ```cpp
 Binary sketch size: 5,274 bytes (of a 32,256 byte maximum)
