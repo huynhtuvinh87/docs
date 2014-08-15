@@ -44,7 +44,7 @@ Helium network for internet communication.  You can either modify one
 of the example sketches or create a new sketch and import the Helium
 library to the new sketch.
 
-After you create a new sketch, you should importing the Arduino
+After you create a new sketch, you should import the Arduino
 library by selecting the _Sketch/Import Library/helium_
 menu. Importing the library basically just adds a `#include "helium"`
 directive to your sketch.
