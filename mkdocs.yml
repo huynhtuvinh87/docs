@@ -4,6 +4,7 @@ pages:
 - ['libraries/arduino.md', 'Libraries', 'Arduino']
 - ['shields-and-modules/springer-alpha-shield.md', 'Shields and Modules', 'Springer Alpha Shield']
 - ['shields-and-modules/atom-beta-shield.md', 'Shields and Modules', 'Atom Beta Shield']
+- ['shields-and-modules/element-beta-bridge.md', 'Shields and Modules', 'Element Beta Bridge']
 - ['fusion/helium-fusion.md', 'Fusion', 'Helium Fusion']
 - ['community.md', 'Community and Support']
 
