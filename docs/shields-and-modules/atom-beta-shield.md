@@ -1,6 +1,6 @@
 # Atom Beta Shield
 
-The second generation of the Helium Development Shield is known as the **Atom**. The Atom, pictured here, is what beta participants are using for their development on the Helium network. 
+The second generation of the Helium Development Shield is known as the Atom. The Atom is what beta participants are using for development on the Helium network. Atoms connect to the network and transmit data via the onboard Helium Module, seen below as the rectangular, metal encasing on the Atom. Modules run the firmware that powers the Helium connectivity protocol. (For production hardware, the Helium Module can be made to fit nearly any PCB. And the standalone firmware will also be made available for those who want to incorporate it into a custom chipset.)
 
 
 ![Atom Beta Shield](https://www.helium.co/docs/img/atom1.jpg)
@@ -29,9 +29,9 @@ The Atom has three LEDs:
 |Red        | RX indicator									   |	 
 |Blue       | TX indicator									   | 
 
-During power on, the Blue LED will flash very rapidly, showing it is scanning channels. If a Bridge is within range, it will enter the association process. Upon completion of that process, the Bridge will send the final configuration data and the Atom's Red LED will stay lit for 500ms. After this is complete, the red LED will continue blinking once per second to signify that it's online and listening to the Bridge. 
+When powering on, the blue LED will flash very rapidly, showing it is scanning channels. If a Bridge is within range, it will enter the association process. Upon completion of that process, the Bridge will send the final configuration data and the Atom's red LED will stay lit for 500ms. After this is complete, the red LED will continue blinking once per second to signify that it's online and listening to a Helium Bridge.
 
-If there is an application that requires transmitting data from the Atom to the network, the Blue LED will light up, signifying the transmitted frames leaving the Atom. This will be a 500ms blink when data is transmitted. If sleep is used - done so by toggling the `D5` pin - the Atom will enter sleep mode and the module will not receive or transmit any data. Once awake, the Atom will again be listening for the Bridge data and start sending application data as required. If the Bridge is moved or out of range, the Atom will enter re-scaning mode to search for the nearest Bridge again.
+If there is an application that requires transmitting data from the Atom to the network, the blue LED will illuminate, signifying the transmitted frames leaving the Atom. This will be a 500ms blink when data is transmitted. If sleep is used - done so by toggling the `D5` pin - the Atom will enter sleep mode and will not receive or transmit any data. Once awake, the Atom will again be listening for the Bridge data and start sending application data as required. If the Bridge is moved or out of range, the Atom will enter re-scaning mode to search for the nearest Bridge again.
 
 ## Atom Pins
 

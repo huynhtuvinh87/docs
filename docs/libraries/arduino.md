@@ -17,22 +17,21 @@ our [Github repo](https://github.com/helium/helium-arduino/archive/master.zip).
 The Arduino GUI can load libraries directly
 from the zipfile, but the Helium zipfile will not work because it
 contains dashes. So unzip the downloaded file to a convenient place on
-your disk, and rename the *helium-arduino-master directory* to simply
-_helium_.
+your disk, and rename the `helium-arduino-master directory` to simply
+`helium`.
 
 The library must be loaded into the Arduino development tool before
-you can use it. Download the Arduino GUI from
-[Arduino.cc](http://www.arduino.cc), and install it. Start the Arduino GUI,
+you can use it. If you haven't done so already, download the Arduino GUI from
+[Arduino.cc](http://www.arduino.cc) and install it. Start the Arduino GUI,
 and import the Helium library from the main menu item labeled
-_Sketch/Import Library/Add Library_, and select the _helium_ directory
+_Sketch/Import Library/Add Library_, and select the `helium` directory
 that you renamed earlier. If there are no errors, then you should be
 able to load one of the Helium example sketches. Select
-_File/Examples/Helium_ to see a list of examples that you can load,
-and load one of them.
+_File/Examples/Helium_ to see a list of examples that you can use. 
 
-Try building the sketch by pressing control-R. If all is well you will
-see a message in the output panel of the Arduino IDE giving the image
-size of the compiled application.  If there are problems, you can get
+Try building the sketch by pressing `control-R`. If it works as expected, 
+you will see a message in the output panel of the Arduino IDE giving the 
+image size of the compiled application.  If there are problems, you can get
 help resolving them on the [Arduino webpage](http://www.arduino.cc).
 
 ```cpp
@@ -40,7 +39,7 @@ Binary sketch size: 5,274 bytes (of a 32,256 byte maximum)
 ```
 
 Now you are ready to create an Arduino application that uses the
-Helium network for internet communication.  You can either modify one
+Helium Network for internet communication.  You can either modify one
 of the example sketches or create a new sketch and import the Helium
 library to the new sketch.
 
@@ -52,11 +51,8 @@ directive to your sketch.
 
 ## Initialize The Helium Library
 
-Before you can use the Helium library, you must create a single
-HeliumModem object as shown in the example. The object created will be
-used to exchange data with the Helium network.  This object is
-referenced by the modem variable, which is a pointer the newly created
-modem object.
+Before you can use the Helium library, you must create a single `HeliumModem` object as shown in the example. The object created will be used to exchange data with the Helium Network. This object is referenced by the `modem` variable, which is a pointer the newly created `modem` object. (It's worth noting that the Helium Module, the hardware component soldered onto the development shield, is what facilitates the exchange of data between the Arduino and Helium Network. Data from the Arduino is encoded as a series of `HeliumModem` objects by the Arduino library. These objects then pass through the Helium Module to the Network.) 
+
 
 Here is how you would create an instance of the Helium modem in the sketch’s `setup` function.
 
@@ -77,7 +73,7 @@ void setup(void)
 ## Get Modem Status
 
 The `getStatus` function returns the current status of the modem. The
-function will return a pointer to a ModemStatus structure, or `NULL`
+function will return a pointer to a `ModemStatus` structure, or `NULL`
 if the modem failed to return the status structure.  This can happen
 if the modem is powered off or if there is a hardware problem with the
 connection between the modem and Arduino.
@@ -113,7 +109,7 @@ ModemStatus *ms = modem->getStatus();
 ## Send Data To The Modem
 
 Helium uses [MessagePack](http://msgpack.org) to handle data
-transmission to and from the network. The MessagePack format provides
+transmission to and from the Network. The MessagePack format provides
 two major advantages:
 
 1. Data is packed efficiently (and data types are preserved)
@@ -122,8 +118,8 @@ two major advantages:
 
 The Helium library includes two classes to handle data: `DataPack` and
 `DataUnpack`. These classes implement the MessagePack format and
-simplify handling data transfers between end application (Arduino) and
-the Helium system.
+simplify handling data transfers between the end application running on the Arduino and
+the Helium Network.
 
 To send data, the user creates a `DataPack` object, and then adds
 pieces of data as necessary to the object.  When the object has been
@@ -214,7 +210,7 @@ The `DataPack` class offers these functions:
 |appendFloat|float n|void| Append a single-precision floating point value to the package|
 
 The `sendPack` function sends a block of data from the application
-to the Helium Router. The data must be in the form of a DataPack
+to the Helium Network. The data must be in the form of a `DataPack`
 object. `sendPack` takes one parameter, a pointer to a
 previously-created DataPack object.
 
@@ -228,8 +224,8 @@ to the Helium router.  If the block is larger than about 100 bytes,
 the transfer will be broken up into multiple blocks and re-assembled
 on the Helium system. (Multi-block transfers are not yet implemented.)
 
-The `sendPack` function is a blocking function - the function will
-not return until the transfer has completed, or the transfer has
+The `sendPack` function is a blocking function. The function will
+not return until the transfer has completed or the transfer has
 failed to complete.
 
 ## Using `loop` Function To Get Modem Data
@@ -373,7 +369,7 @@ the modem is sleeping, it draws only a few microamps of current. Upon
 awakening, the modem is immediately able to send and receive data,
 unless the wireless bridge that the modem was connected to is no
 longer available.  In that case, the modem will automatically
-re-connect to the Helium network, a process which usually takes about
+re-connect to the Helium Network, a process which usually takes about
 one second.
 
 It is necessary to wake the modem before sending data. Call

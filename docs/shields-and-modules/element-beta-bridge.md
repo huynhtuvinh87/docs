@@ -1,9 +1,9 @@
 # Element Beta Bridge
 
-Helium Bridges create local connectivity for your devices and other devices in range. The beta version of the bridge, seen here, is known as the Element. 
+Helium Bridges create local connectivity for your Helium Devices and other Devices in range. A "Helium Device" is any piece of hardware - sensor, temperature gauge, wearable, etc. - that is running a Helium Module or our firmware to enable connectivity. The beta version of the Bridge, seen here, is known as the Element. 
 
 
-![Element](https://www.helium.co/docs/img/element-overview.png)
+![Element](https://www.helium.co/docs/img/element-overview.jpg)
 
 Elements are deployed and added to the Helium Network in two simple steps: connecting it to a power source; and turning it on. (Elements connect to the internet via a cellular connection. Each comes equipped with a SIM card that is activated and managed by Heliim. Take a moment to ensure that the SIM card is properly inserted after receiving your Element.)
 
@@ -19,7 +19,7 @@ When this is complete, you should see the LEDs on the front of the Element illum
 Even though the Element is running off USB power, you should switch on the on-board battery for uninterrupted operation. To do this, open the Element case, and locate the toggle switch attached to the power wires (shown below). Toggle the switch to connect the battery. 
 
 
-![Element](https://www.helium.co/docs/img/element-on-switch.png)
+![Element](https://www.helium.co/docs/img/element-on-switch.jpg)
 
 
 Immediately after being powered on, the blue LED located on the front of the board will go solid, indicating that the Element is in the process of connecting. This should only take a few seconds. When this is complete, the LED will go off, and then proceed to blink once per second. (In the event that the Element has weak or poor cellular signal, the device will reconnect as needed, causing the blue LED to deviate temporarily from blinking once per second.)
