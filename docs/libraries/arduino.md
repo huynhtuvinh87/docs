@@ -437,13 +437,20 @@ void setup() {
   modem = new HeliumModem();
 }
 
-void loop()
-{
-      // send a message on a loop every five seconds
-      DataPack dp(1);
-      dp.appendString("Sent from my Helium Device");
-      modem->sendPack(&dp);
-      delay(5000);
+void loop() {
+  static u32 lastTime;
+  u32 time;
+  
+  // send a message on a loop every five seconds
+  time = millis();
+  if (time - lastTime > 5000) {
+    lastTime = time;  
+    
+    modem->sleepModem(1);
+    DataPack dp(1);
+    dp.appendString("Sent from my Helium Device");
+    modem->sendPack(&dp);
+  }
 }
 
 ```
