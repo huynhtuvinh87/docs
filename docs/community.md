@@ -24,4 +24,14 @@ You can follow all the developments from the team on the [@wearehelium](https://
 
 The [Helium Blog](https://www.helium.co/blog/) is where the team publishes technical content. 
 
+## San Francisco Coverage Map 
+
+This heat map is a representation of the coverage that currently exists in San Francisco as part of the [ongoing beta](https://www.helium.co/#/beta). It will be updated accordingly as we expand.
+
+![SF Beta Coverage Map](https://www.helium.co/docs/img/sf-beta-coverage.png)
+
+
+
+
+
 
