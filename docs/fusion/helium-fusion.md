@@ -19,9 +19,9 @@ To create a new flow, you would start with that input box in the upper right cor
 
 ![No Device](https://www.helium.co/docs/img/fusion-no-devices.png)
 
-If you're part of the Beta, you'll be using an [Atom](/shields-and-modules/atom-beta-shield/) to connect to Helium. Each Helium module is identified by a globally unique serial number, 12-16 hexadecimal characters in length. To add your device to the network, enter this serial number (which should be labelled clearly on your Atom), along with a New Device Name of your choosing, and click "Register Device" in the upper right. 
+If you're part of the Beta, you'll be using an [Atom](/shields-and-modules/atom-beta-shield/) to connect to Helium. Each Atom is equipped with our complete chipset that enables it to connect to the network and exchange data. Atoms are identified by their globally-unique MAC address. To add your Atom to the network, enter the MAC address - **found in small print and labelled 'MAC'** -  along with a New Device Name of your choosing, and click "Register Device" in the upper right. 
 
-As an example, if we used `00212eabae0039e1` for the Serial Number and `My First Device` for your device name, heres's what you would see:
+As an example, if we used `00212eabae0039e1` for the MAC and `My First Device` for your device name, heres's what you would see:
 
 ![First Device](https://www.helium.co/docs/img/first-device.png)
 

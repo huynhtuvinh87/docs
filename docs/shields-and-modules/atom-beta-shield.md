@@ -1,7 +1,6 @@
 # Atom Beta Shield
 
-The second generation of the Helium Development Shield is known as the Atom. The Atom is what beta participants are using for development on the Helium network. Atoms connect to the network and transmit data via the onboard Helium Module, seen below as the rectangular, metal encasing on the Atom. Modules run the firmware that powers the Helium connectivity protocol. (For production hardware, the Helium Module can be made to fit nearly any PCB. And the standalone firmware will also be made available for those who want to incorporate it into a custom chipset.)
-
+The second generation of the Helium Development Shield is known as the Atom. The Atom is what beta participants are using for development on the Helium Network. Each Atom is equipped with our complete chipset that enables it to connect to the Network and exchange data. 
 
 ![Atom Beta Shield](https://www.helium.co/docs/img/atom1.jpg)
 
@@ -39,10 +38,10 @@ The Atom Shield Pin Mapping is as follows:
 
 |FUNCTION   | PIN  | DESCRIPTION / NOTES           					  |
 |-----------|------|--------------------------------------------------|
-|USART RXD  | D7   | Input TX'd data from Arduino to Module           | 
-|USART TXD  | D6   | Output TX'd data from Module to Arduino          | 
-|SLEEP      | D5   | Input from Arduino to Sleep Module (ACTIVE HIGH) |
-|RESET      | D4   | Input from Arduino to Reset Module (ACTIVE HIGH) |
+|USART RXD  | D7   | Input TX'd data from Arduino to Atom             | 
+|USART TXD  | D6   | Output TX'd data from Atom to Arduino            | 
+|SLEEP      | D5   | Input from Arduino to Sleep Atom   (ACTIVE HIGH) |
+|RESET      | D4   | Input from Arduino to Reset Atom   (ACTIVE HIGH) |
 |IO BUTTON  | D3   | Output from button B3 to Arduino (selected by J9)|
 
 

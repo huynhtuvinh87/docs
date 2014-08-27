@@ -14,15 +14,15 @@ application.
 The easiest way to get started is to download the latest 
 version of the library from 
 our [Github repo](https://github.com/helium/helium-arduino/archive/master.zip). 
-The Arduino GUI can load libraries directly
+The Arduino IDE can load libraries directly
 from the zipfile, but the Helium zipfile will not work because it
 contains dashes. So unzip the downloaded file to a convenient place on
 your disk, and rename the `helium-arduino-master directory` to simply
 `helium`.
 
 The library must be loaded into the Arduino development tool before
-you can use it. If you haven't done so already, download the Arduino GUI from
-[Arduino.cc](http://www.arduino.cc) and install it. Start the Arduino GUI,
+you can use it. If you haven't done so already, download the Arduino IDE from
+[Arduino.cc](http://www.arduino.cc) and install it. Start the Arduino IDE,
 and import the Helium library from the main menu item labeled
 _Sketch/Import Library/Add Library_, and select the `helium` directory
 that you renamed earlier. If there are no errors, then you should be
