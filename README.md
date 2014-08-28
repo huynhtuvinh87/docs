@@ -1,10 +1,18 @@
-Helium Docs via mkdocs.org. These live online at https://www.helium.co/docs/
+Welcome to the Helium Documentation. These docs are live at [helium.co/docs](http://helium.co/docs)
 
-To add a new page:
+### Contributing 
 
-- clone/pull this repo
-- add a new markdown (.md) file into the /docs folder
-- optionally update the /mkdocs.yml file to include it in the main navigation
-- push back to git hub
-- pull to the webserver (/usr/share/nginx/helium-docs/)
-- run: mkdocs build
+If you have documenation to contribute or issues to report, we want to hear from you. 
+
+* All bugs or issues should be reported [here](https://github.com/helium/docs/issues). Be as descriptive as possible. 
+* To contribute documenation or a fix for a bug or issue, clone this repo, do some work, put it in an appropriately-named branch, and send us a [pull request](https://github.com/helium/docs/pulls). We'll review it as soon as possible. 
+ 
+### Building and Running Locally
+
+We us [MkDocs](http://www.mkdocs.org/) to generate the Helium Documentation. Check out [installation guide](http://www.mkdocs.org/#installation) if you would like to run these docs running locally. 
+
+
+### Questions and Support
+
+* The [Helium Community](https://www.helium.co/docs/community/) is here to help.
+* Email **mark@helium.co** if you have questions that aren't easily answered via public channels.
