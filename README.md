@@ -1,4 +1,4 @@
-Welcome to the Helium Documentation. These docs are live at [helium.co/docs](http://helium.co/docs)
+Welcome to the Helium Documentation. These docs are live at [helium.co/docs](http://helium.co/docs). 
 
 ### Contributing 
 
@@ -9,7 +9,7 @@ If you have documenation to contribute or issues to report, we want to hear from
  
 ### Building and Running Locally
 
-We us [MkDocs](http://www.mkdocs.org/) to generate the Helium Documentation. Check out [installation guide](http://www.mkdocs.org/#installation) if you would like to run these docs running locally. 
+We us [MkDocs](http://www.mkdocs.org/) to generate the Helium Documentation. Check out [installation guide](http://www.mkdocs.org/#installation) if you would like to run these docs locally. 
 
 
 ### Questions and Support
