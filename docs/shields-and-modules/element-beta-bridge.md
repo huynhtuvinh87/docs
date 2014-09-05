@@ -34,6 +34,7 @@ HW reset modem | Solid     |                    | Flashing
 Modem init     | Solid     |  Flashing          |
 Modem connecting| Solid    |  Solid             |
 
+If the element is stepping through these 3 phases over and over, you probably do not have adequate cellular coverage in your area or your bridge should be relocated to a spot with better reception.
 
 There are 2 additional status lights on the element, one near the power connector, that is green when on AC power, red when chargning the battery, and off when the element is running off of battery power.
 
