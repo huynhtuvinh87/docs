@@ -24,6 +24,19 @@ Even though the Element is running off USB power, you should switch on the on-bo
 
 Immediately after being powered on, the blue LED located on the front of the board will go solid, indicating that the Element is in the process of connecting. This should only take a few seconds. When this is complete, the LED will go off, and then proceed to blink once per second. (In the event that the Element has weak or poor cellular signal, the device will reconnect as needed, causing the blue LED to deviate temporarily from blinking once per second.)
 
-Your Element is now connected to the internet via a cellular connection, and ready to accept connection from Helium devices. 
+Your Element is now connected to the internet via a cellular connection, and ready to accept connection from Helium devices.
+
+If your Element does not start flashing the blue light, consult the table below to decode its status:
+
+Status | Blue Center Light | Green Center Light | Red Center Light
+-------|-------------------|--------------------|-----------------
+HW reset modem | Solid     |                    | Flashing
+Modem init     | Solid     |  Flashing          |
+Modem connecting| Solid    |  Solid             |
+
+
+There are 2 additional status lights on the element, one near the power connector, that is green when on AC power, red when chargning the battery, and off when the element is running off of battery power.
+
+The cellular modem (the large shielded chip with a red/white label) also has a green status light. A slow blink indicates the modem is trying to connect over TCP to the helium network. A fast blink indicates it is connected and transmitting.
 
 You are now ready to start building applications [with your Atom](/docs/shields-and-modules/atom-beta-shield/). If you have any issues while deploying your Element, post a message on the [Forum](http://forum.helium.co/) or find us in [Helium Community Chat](http://www.hipchat.com/g0w30ttrl). 
